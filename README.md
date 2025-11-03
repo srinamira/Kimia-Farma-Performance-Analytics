@@ -10,38 +10,33 @@ Dataset yang digunakan berasal dari Kaggle:
 
 ## 📦 Dataset Overview
 
-Dataset ini berisi data pelanggan dari perusahaan pemasaran langsung. Kolom-kolom utama meliputi:
+Dataset ini berisi data kinerja dari perusahaan Kimia Farman selama 2020 sampai 2023. Kolom-kolom utama meliputi:
 
-| Fitur             | Deskripsi |
-|------------------|-----------|
-| `ID`             | ID unik untuk setiap pelanggan |
-| `Year_Birth`     | Tahun kelahiran pelanggan |
-| `Education`      | Tingkat pendidikan pelanggan |
-| `Marital_Status` | Status pernikahan |
-| `Income`         | Pendapatan tahunan |
-| `Kidhome`        | Jumlah anak kecil di rumah |
-| `Teenhome`       | Jumlah remaja di rumah |
-| `Dt_Customer`    | Tanggal pertama menjadi pelanggan |
-| `Recency`        | Hari sejak pembelian terakhir |
-| `MntWines` hingga `MntGoldProds` | Total pembelian per kategori produk |
-| `NumWebPurchases`, dll | Jumlah pembelian melalui kanal tertentu |
-| `AcceptedCmp1`–`AcceptedCmp5` | Indikator penerimaan kampanye 1–5 |
-| `Response`       | Penerimaan kampanye terakhir |
-| `Z_CostContact`, `Z_Revenue` | Nilai tetap (tidak informatif) |
-| `Complain`       | Apakah pelanggan pernah komplain |
+| Fitur | Deskripsi |
+| --- | --- |
+| `transaction_id` | Kode ID transaksi |
+| `date` | Tanggal transaksi dilakukan |
+| `branch_id` | Kode ID cabang Kimia Farma |
+| `branch_name` | Nama cabang Kimia Farma |
+| `kota` | Kota cabang Kimia Farma |
+| `provinsi` | Provinsi cabang Kimia Farma |
+| `rating_cabang` | Penilaian konsumen terhadap cabang Kimia Farma |
+| `customer_name` | Nama *customer* yang melakukan transaksi |
+| `product_id` | Kode produk obat |
+| `product_name` | Nama obat |
+| `actual_price` | Harga obat |
+| `discount_percentage` | Persentase diskon yang diberikan pada obat |
+| `persentase_gross_laba` | Persentase laba yang seharusnya diterima dari obat |
+| `nett_sales` | Harga setelah diskon |
+| `nett_profit` | Keuntungan yang diperoleh Kimia Farma |
+| `rating_transaksi` | Penilaian konsumen terhadap transaksi yang dilakukan |
 
 ---
 
 ## 🎯 Tujuan Proyek
 
-- Menganalisis perilaku pelanggan berdasarkan pengeluaran dan aktivitas belanja.
-- Membuat model klasifikasi untuk memprediksi apakah pelanggan akan menerima kampanye.
-- Membuat model regresi untuk memprediksi **TotalSpend (CLV)**.
-- Membandingkan performa model:
-  - `LinearRegression`
-  - `GradientBoostingRegressor`
-  - `XGBoost`
-  - `RandomForestRegressor`
+- Menganalisis performa dari kinerja penjualan Kimia Farma.
+- Membuat Dashboard interaktif yang dapat dijadikan acuan dalam pengambilan keputusan
 
 ---
 
